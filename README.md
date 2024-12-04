@@ -1,6 +1,6 @@
 **概要**
 
-42のカリキュラムにおける修了制作であり、フルスタックのウェブアプリケーション開発を通じて、バックエンドから**フロントエンド、データベース設計、リアルタイム通信まで幅広いスキルを習得**することを目的としています。
+42のカリキュラムにおける修了制作であり、フルスタックのウェブアプリケーション開発を通じて、バックエンドからフロントエンド、データベース設計、リアルタイム通信まで幅広いスキルを習得することを目的としています。
 
 リアルタイムで対戦可能なオンラインゲーム「Pong」をユーザプレイでき、そのために**チャットルームでチャットやユーザのプロフィル管理、友達登録、ランダムゲームマッチング**など構築しました。
 
@@ -29,7 +29,7 @@
 
 > 1。ログイン
 >
-> [1。ログイン＿合体.png]
+> <img src="https://github.com/user-attachments/assets/942cae6c-60f6-446a-8f79-d5c1ec35a30e">
 >
 > OAuthを使用して、安全なログイン機能を提供します。
 >
@@ -40,7 +40,7 @@
 
 > ２。チャットリスト
 >
-> ![2。チャットリストー合体.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/765cb30d-f393-4f06-b5ad-6a2137adafdf/2%E3%80%82%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%83%BC%E5%90%88%E4%BD%93.png)
+> <img width=77% height=77% src="https://github.com/user-attachments/assets/df2245ba-1e75-47a2-a0f6-72bcb7a384cd">
 >
 > - チャットルーム生成：新しいチャットルームを作成できます。
 > - 公開/非公開チャット：チャットルームの公開・非公開設定を選択可能です。
@@ -51,7 +51,7 @@
 
 > ３。チャットルーム
 >
-> ![３。チャットルームー合体.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/4b4099f7-94c4-4983-be6e-b7ac7500a68c/%EF%BC%93%E3%80%82%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%AB%E3%83%BC%E3%83%A0%E3%83%BC%E5%90%88%E4%BD%93.png)
+> <img width=77% height=77% src="https://github.com/user-attachments/assets/33451aa7-0c7e-4a34-bb88-957988d6790c">
 >
 > - リアルタイムチャット：WebSocketを利用した機能を実装しています。
 > - チャットルーム設定変更：チャットルーム名や公開・非公開の設定を変更可能です。
@@ -65,7 +65,7 @@
 
 > ４。友達リスト
 >
-> ![４。友達機能.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/8094f3a8-bf67-4b44-b20a-18e6aa12f401/%EF%BC%94%E3%80%82%E5%8F%8B%E9%81%94%E6%A9%9F%E8%83%BD.png)
+> <img width=38% height=38% alt="４。友達機能" src="https://github.com/user-attachments/assets/00a594b0-5df7-4d64-9a6b-0cbd12e6b716">
 >
 > - ユーザー検索および友達登録：他のユーザーを検索して友達として登録できます。
 > - 友達ブロック機能：特定の友達をリストからブロックすることが可能です。
@@ -75,7 +75,7 @@
 
 > ５。チャットプロファイル
 >
-> ![５。チャットプロフィール.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/5db6cbbb-e8db-4e83-b310-fd760d33d52e/%EF%BC%95%E3%80%82%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%95%E3%82%9A%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB.png)
+> <img width=37% height=37% alt="５。チャットプロフィール" src="https://github.com/user-attachments/assets/0b3056c4-9575-4713-9a57-fed512fb9549">
 >
 > - 一対一のチャットおよびゲーム申請ができます。
 > - 友達リストから特定のユーザーをブロック（Ban）できます。
@@ -85,7 +85,7 @@
 
 > ６。ユーザープロファイル
 >
-> ![6。ユーザプロフィールー合体.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/343330f2-1197-4e64-8e55-9ba3ac273580/6%E3%80%82%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%BC%E5%90%88%E4%BD%93.png)
+> <img width=77% height=77% src="https://github.com/user-attachments/assets/bdab461b-c69e-47a0-a546-f5aa1bd10ba6">
 >
 > - プロフィール変更機能
 >   - あだ名（ニックネーム）を変更可能です。
@@ -97,7 +97,7 @@
 
 > ７。ゲームショップ＆ゲームプレイ
 >
-> ![７。ゲームショッピ＆ゲームフレイ.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/8b82034a-4920-4f81-963b-c8c3b2a35760/%EF%BC%97%E3%80%82%E3%82%B1%E3%82%99%E3%83%BC%E3%83%A0%E3%82%B7%E3%83%A7%E3%83%83%E3%83%92%E3%82%9A%EF%BC%86%E3%82%B1%E3%82%99%E3%83%BC%E3%83%A0%E3%83%95%E3%83%AC%E3%82%A4.png)
+><img width=77% height=77% src="https://github.com/user-attachments/assets/a7d9c347-4fca-42c8-b11a-cdf5fd67cb09">
 >
 > - Web上でリアルタイムにピンポンゲームをプレイできます。
 
@@ -106,7 +106,7 @@
 
 > ８。ゲーム戦績
 >
-> ![９。ゲーム戦績ページ.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/ca3d7e6a-78da-42d7-9bd8-4c7ab9131a71/%EF%BC%99%E3%80%82%E3%82%B1%E3%82%99%E3%83%BC%E3%83%A0%E6%88%A6%E7%B8%BE%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99.png)
+> <img width=38% height=38% alt="９。ゲーム戦績ページ" src="https://github.com/user-attachments/assets/7854d9db-3d7e-4197-8897-588c7a47b11a">
 >
 > - これまでにプレイしたゲームの戦績を確認できます。
 
@@ -115,7 +115,7 @@
 
 > ９。ゲーム観戦ページ
 >
-> ![10。ゲーム観戦.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/a09fe019-a553-47d2-a2f1-a168f5c00ea0/10%E3%80%82%E3%82%B1%E3%82%99%E3%83%BC%E3%83%A0%E8%A6%B3%E6%88%A6.png)
+> <img width=36% height=36% alt="２。チャットリスト" src="https://github.com/user-attachments/assets/3de965ee-63d0-47e8-9b0d-9e732dfbf84b">
 >
 > - 現在進行中のゲームをリアルタイムで観戦できます
 
