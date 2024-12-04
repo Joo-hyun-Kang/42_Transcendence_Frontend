@@ -1,46 +1,151 @@
-# Getting Started with Create React App
+**概要**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+42のカリキュラムにおける修了制作であり、フルスタックのウェブアプリケーション開発を通じて、バックエンドから**フロントエンド、データベース設計、リアルタイム通信まで幅広いスキルを習得**することを目的としています。
 
-## Available Scripts
+リアルタイムで対戦可能なオンラインゲーム「Pong」をユーザプレイでき、そのために**チャットルームでチャットやユーザのプロフィル管理、友達登録、ランダムゲームマッチング**など構築しました。
 
-In the project directory, you can run:
+<br>
+<br>
 
-### `npm start`
+**サービス内容**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **チャット機能**
+  - 公開・非公開設定が可能なチャットルーム生成
+  - WebSocketを利用したチャット機能
+  - チャットルームで招待、退出、ミュートなど管理機能
+- **ユーザー機能**
+  - マイページでニックネーム、プロフィール写真の変更が可能
+  - 他のユーザーと友達登録、ブロック機能
+  - 認証：OAuth, Jwtトークン、メールを用いた二次認証
+- **ゲーム機能**
+  - WebSocketを利用したリアルタイムのポンポンゲームプレイ
+  - ゲームマッチング**：待機中のユーザー同士をマッチング**
+  - ゲーム観戦と戦績紹介機能
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br>
+<br>
 
-### `npm test`
+**サービス詳細（画像） 🐣** ~
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> 1。ログイン
+>
+> [1。ログイン＿合体.png]
+>
+> OAuthを使用して、安全なログイン機能を提供します。
+>
+> - 二次認証：ログイン時にメールを用いた二次認証プロセスを提供しています。
 
-### `npm run build`
+<br>
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> ２。チャットリスト
+>
+> ![2。チャットリストー合体.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/765cb30d-f393-4f06-b5ad-6a2137adafdf/2%E3%80%82%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%83%BC%E5%90%88%E4%BD%93.png)
+>
+> - チャットルーム生成：新しいチャットルームを作成できます。
+> - 公開/非公開チャット：チャットルームの公開・非公開設定を選択可能です。
+> - パスワード設定：非公開チャットでは、パスワードによるアクセス制限を設定できます。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> ３。チャットルーム
+>
+> ![３。チャットルームー合体.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/4b4099f7-94c4-4983-be6e-b7ac7500a68c/%EF%BC%93%E3%80%82%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%AB%E3%83%BC%E3%83%A0%E3%83%BC%E5%90%88%E4%BD%93.png)
+>
+> - リアルタイムチャット：WebSocketを利用した機能を実装しています。
+> - チャットルーム設定変更：チャットルーム名や公開・非公開の設定を変更可能です。
+> - ルームのユーザー管理機能
+>   - ユーザーを招待または退出させることができます。
+>   - ユーザーを黙らせる（ミュート）機能を備えています。
+> - 管理者権限：チャットルームの管理者権限を他のユーザーに付与可能です
 
-### `npm run eject`
+<br>
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> ４。友達リスト
+>
+> ![４。友達機能.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/8094f3a8-bf67-4b44-b20a-18e6aa12f401/%EF%BC%94%E3%80%82%E5%8F%8B%E9%81%94%E6%A9%9F%E8%83%BD.png)
+>
+> - ユーザー検索および友達登録：他のユーザーを検索して友達として登録できます。
+> - 友達ブロック機能：特定の友達をリストからブロックすることが可能です。
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> ５。チャットプロファイル
+>
+> ![５。チャットプロフィール.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/5db6cbbb-e8db-4e83-b310-fd760d33d52e/%EF%BC%95%E3%80%82%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%95%E3%82%9A%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB.png)
+>
+> - 一対一のチャットおよびゲーム申請ができます。
+> - 友達リストから特定のユーザーをブロック（Ban）できます。
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br>
+<br>
 
-## Learn More
+> ６。ユーザープロファイル
+>
+> ![6。ユーザプロフィールー合体.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/343330f2-1197-4e64-8e55-9ba3ac273580/6%E3%80%82%E3%83%A6%E3%83%BC%E3%82%B5%E3%82%99%E3%83%95%E3%82%9A%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%BC%E5%90%88%E4%BD%93.png)
+>
+> - プロフィール変更機能
+>   - あだ名（ニックネーム）を変更可能です。
+>   - プロフィール写真をアップロードまたは更新できます。
+> - ゲーム戦績の表示：過去のゲーム戦歴をプロフィール画面で確認できます。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> ７。ゲームショップ＆ゲームプレイ
+>
+> ![７。ゲームショッピ＆ゲームフレイ.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/8b82034a-4920-4f81-963b-c8c3b2a35760/%EF%BC%97%E3%80%82%E3%82%B1%E3%82%99%E3%83%BC%E3%83%A0%E3%82%B7%E3%83%A7%E3%83%83%E3%83%92%E3%82%9A%EF%BC%86%E3%82%B1%E3%82%99%E3%83%BC%E3%83%A0%E3%83%95%E3%83%AC%E3%82%A4.png)
+>
+> - Web上でリアルタイムにピンポンゲームをプレイできます。
+
+<br>
+<br>
+
+> ８。ゲーム戦績
+>
+> ![９。ゲーム戦績ページ.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/ca3d7e6a-78da-42d7-9bd8-4c7ab9131a71/%EF%BC%99%E3%80%82%E3%82%B1%E3%82%99%E3%83%BC%E3%83%A0%E6%88%A6%E7%B8%BE%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99.png)
+>
+> - これまでにプレイしたゲームの戦績を確認できます。
+
+<br>
+<br>
+
+> ９。ゲーム観戦ページ
+>
+> ![10。ゲーム観戦.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/22ceec49-e9f8-4277-a6ac-4f83db54623b/a09fe019-a553-47d2-a2f1-a168f5c00ea0/10%E3%80%82%E3%82%B1%E3%82%99%E3%83%BC%E3%83%A0%E8%A6%B3%E6%88%A6.png)
+>
+> - 現在進行中のゲームをリアルタイムで観戦できます
+
+<br>
+<br>
+
+**開発方法＆チーム構成**
+
+- **開発方法**
+  - デザイン、API設計、エンティティデザインの後、６週間のスプリント開発
+  - 毎週、チーム内で維持する文化（Keep）、問題点（Problem）、試みること（Try）の**KPT振り返り**を実施
+- **メンバー：**　フロント＆バックエンド：４名
+
+<br>
+<br>
+
+**主な技術スタック 🛠️**
+
+- **バックエンド：** TypeScript, NestJS, PostgreSQL, Prisma
+- **プロントエンド**：TypeScript, React, ReactQuery, Recoil
+- **インフラ・ツール**: Docker, Git
+- **プロジェクト管理**: Git Issue、Git Wiki（ドキュメント管理）
+
+<br>
+<br>
+
+**デザイン🔥**
+
+ウェブモバイルサーイズで開発
+
+- モバイルUIからPCに向けた画面の拡張しやすいと考え、モバイル画面向けに開発しました。
+- [デザイン　Figma（韓国語）](https://www.figma.com/design/WXd142rB0HWgnhYoTEe4Ss/MatchPoint-Design?node-id=0-1&t=1dHYCPQrLI72XXHP-1)
+- [デザイン　Figma\_フローチャート（韓国語）](https://www.figma.com/board/Bx3l4xtjg5CZ98g6i9xp1R/MatchPoint-DesignFlow?t=4TKSpwd8nF2urLny-1)
